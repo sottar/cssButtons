@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+// Initialize Compass
+@import "compass";
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
