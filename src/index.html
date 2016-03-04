@@ -613,7 +613,7 @@
       </li>
       <li class="button_list content_center">
         <div class="button" id="btn11">
-          <a class="button_anchor" href="javascript:void(0);"><span class="after">hover</span><span class="before">source</span></a>
+          <a class="button_anchor" href="javascript:void(0);"><span class="after">click!</span><span class="before">source</span></a>
         </div>
       </li>
       <li class="button_list">
@@ -695,7 +695,10 @@
             <p class="description">HTML</p>
             <pre>
               <code class="html">
-  &lt;a class="button" href=""&gt;&lt;span class="after"&gt;hover&lt;/span&gt;&lt;span class="before"&gt;source&lt;/span&gt;&lt;/a&gt;
+  &lt;a class="button" href=""&gt;
+      &lt;span class="after"&gt;click!&lt;/span&gt;
+      &lt;span class="before"&gt;source&lt;/span&gt;
+  &lt;/a&gt;
               </code>
             </pre>
           </li>
@@ -1008,7 +1011,7 @@
       </li>
       <li class="button_list">
         <div class="button" id="btn16">
-          <a class="button_anchor" href="javascript:void(0);"><span class="after">hover</span><span class="before">source</span></a>
+          <a class="button_anchor" href="javascript:void(0);"><span class="after">click!</span><span class="before">source</span></a>
         </div>
       </li>
       <li class="button_list content_center">
@@ -1028,7 +1031,7 @@
             <pre>
               <code class="html">
   &lt;a class="button" href=""&gt;
-      &lt;span class="after"&gt;hover&lt;/span&gt;
+      &lt;span class="after"&gt;click!&lt;/span&gt;
       &lt;span class="before"&gt;source&lt;/span&gt;
   &lt;/a&gt;
               </code>
@@ -1188,6 +1191,68 @@
   }
   .button:hover::before {
       left: 15%;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </li>
+      <li class="button_list">
+        <div class="button" id="btn19">
+          <a class="button_anchor" href="javascript:void(0);">source</a>
+        </div>
+      </li>
+      <li class="source_box" id="btn19_source">
+        <ul class="source_list clearfix">
+          <li class="source_html source">
+            <p class="description">HTML</p>
+            <pre>
+              <code class="html">
+  &lt;a class="button" href=""&gt;source&lt;/a&gt;
+              </code>
+            </pre>
+          </li>
+          <li class="source_css source">
+            <p class="description">CSS</p>
+            <pre>
+              <code class="css">
+  .button {
+      font-size: 17px;
+      display: block;
+      text-decoration: none;
+      position: relative;
+      border: 1px solid #ee3769;
+      border-radius: 8px;
+      line-height: 40px;
+      height: 40px;
+      overflow: hidden;
+      color: #ee3769;
+      -webkit-transition: all 0.3s linear;
+      -webkit-transform-origin: 50% 50%;
+      -moz-transition: all 0.3s linear;
+      -moz-transform-origin: 50% 50%;
+      z-index: 2;
+  }
+  .button::before {
+      content:'';
+      position: absolute;
+      border-radius: 50%;
+      display: block;
+      width: 400px;
+      height: 400px;
+      top: -180px;
+      left: -100px;
+      z-index: -1;
+      -webkit-transition: all 0.3s linear;
+      -webkit-transform-origin: 50% 50%;
+      -moz-transition: all 0.3s linear;
+      -moz-transform-origin: 50% 50%;
+  }
+  .button:hover {
+      color: #fff;
+  }
+  .button:hover::before {
+      box-shadow: inset 0 0 0 200px #ee3769;
   }
               </code>
             </pre>

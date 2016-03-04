@@ -859,3 +859,41 @@ body {
     }
   }
 }
+
+#btn19 {
+  .button_anchor {
+    position: relative;
+    border: 1px solid #ee3769;
+    border-radius: 8px;
+    line-height: 40px;
+    height: 40px;
+    overflow: hidden;
+    color: #ee3769;
+    -webkit-transition: all 0.3s linear;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transition: all 0.3s linear;
+    -moz-transform-origin: 50% 50%;
+    z-index: 2;
+    &::before{
+      content:'';
+      position: absolute;
+      border-radius: 50%;
+      display: block;
+      width: 400px;
+      height: 400px;
+      top: -180px;
+      left: -100px;
+      z-index: -1;
+      -webkit-transition: all 0.3s linear;
+      -webkit-transform-origin: 50% 50%;
+      -moz-transition: all 0.3s linear;
+      -moz-transform-origin: 50% 50%;
+    }
+    &:hover {
+      color: #fff;
+      &::before {
+        box-shadow: inset 0 0 0 200px #ee3769;
+      }
+    }
+  }
+}
