@@ -15,7 +15,6 @@ $(function() {
       });
       $('.button_list').css('border', '3px solid #ccc');
       $(btnID).parent('.button_list').css('border', '3px dashed #ccc');
-//       setParameter(btnID);
     } else {
       $(sourceID).animate({
           height: 'hide',
@@ -31,7 +30,6 @@ $(function() {
     }
   });
 });
-
 
 // smooth scroll
 $(function(){
