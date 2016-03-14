@@ -145,14 +145,15 @@ body {
 
 .btn_copy {
   position: absolute;
-  right: 45px;
-  top: 18px;
+  left: 50px;
+  top: 16px;
   width: 50px;
-  height: 25px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  height: 22px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
   background: #ccc;
+  cursor: pointer;
 }
 .btn_copy:hover {
   background: #c0c0c0;
@@ -180,7 +181,7 @@ body {
   float: left;
   position: relative;
   font-size: 13px;
-  font-family: monospace;
+  font-family: Monaco,monospace;
   line-height: 15px;
 }
 .source_box .source .description {
@@ -929,4 +930,19 @@ body {
 }
 #btn19 .button_anchor:hover::before {
   box-shadow: inset 0 0 0 200px #ee3769;
+}
+
+#btn20 .button_anchor {
+  background: #ccc;
+  border: 2px outset buttonface;
+  line-height: 40px;
+  height: 40px;
+  overflow: hidden;
+  color: #222;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  border-radius: 17px;
+}
+#btn20 .button_anchor:hover {
+  border-style: inset;
 }
