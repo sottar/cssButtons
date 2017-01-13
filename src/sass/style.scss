@@ -926,7 +926,6 @@ body {
   }
 }
 
-
 #btn20 {
   .button_anchor {
     background: #ccc;
@@ -940,6 +939,214 @@ body {
     border-radius: 17px;
     &:hover {
      border-style: inset; 
+    }
+  }
+}
+
+#btn21 {
+  .button_anchor {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 2px #f45e61;
+    line-height: 40px;
+    color: #f45e61;
+    text-align: center;
+    text-transform: capitalize;
+    transition: color 0.25s;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border: 2px solid transparent;
+    }
+    &::before {
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      bottom: 0;
+      right: 0;
+    }
+    &:hover {
+      color: #60daaa;
+      &::before,
+      &::after {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+      }
+      &::before {
+        border-top-color: #60daaa;
+        border-right-color: #60daaa;
+        transition:
+          width 0.25s ease-out,
+          height 0.25s ease-out 0.25s;
+      }
+      &::after {
+        border-bottom-color: #60daaa;
+        border-left-color: #60daaa;
+        transition:
+          border-color 0s ease-out 0.5s,
+          width 0.25s ease-out 0.5s,
+          height 0.25s ease-out 0.75s;
+      }
+    }
+  }
+}
+
+#btn22 {
+  .button_anchor {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 2px #f45e61;
+    line-height: 40px;
+    color: #f45e61;
+    text-align: center;
+    text-transform: capitalize;
+    transition: color 0.25s;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border: 2px solid transparent;
+      box-sizing: border-box;
+    }
+    &::before {
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      top: 0;
+      left: 0;
+    }
+    &:hover {
+      color: #fbca67;
+      &::before,
+      &::after {
+        width: 100%;
+        height: 100%;
+      }
+      &::before {
+        border-top-color: #fbca67;
+        border-right-color: #fbca67;
+        transition:
+          width 0.25s ease-out,
+          height 0.25s ease-out 0.25s;
+      }
+      &::after {
+        border-bottom-color: #fbca67;
+        border-left-color: #fbca67;
+        transition:
+          height 0.25s ease-out,
+          width 0.25s ease-out 0.25s;
+      }
+    }
+  }
+}
+
+#btn23 {
+  .button_anchor {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 2px #f45e61;
+    line-height: 40px;
+    color: #f45e61;
+    text-align: center;
+    text-transform: capitalize;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transform-origin: center;
+    }
+    &::before {
+      border-top: 2px solid #6477b9;
+      border-bottom: 2px solid #6477b9;
+      transform: scale3d(0,1,1);
+    }
+    &::after {
+      border-left: 2px solid #6477b9;
+      border-right: 2px solid #6477b9;
+      transform: scale3d(1,0,1);
+    }
+    &:hover {
+      color: #6477b9;
+      &::before,
+      &::after {
+        transform: scale3d(1,1,1);
+        transition: transform 0.5s;
+      }
+    }
+  }
+}
+
+#btn24 {
+  .button_anchor {
+    position: relative;
+    left: 50px;
+    top: -20px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    line-height: 100px;
+    color: #f45e61;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 100%;
+    padding: 0;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      box-sizing: border-box;
+      border-radius: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+    &::before {
+      border: 2px solid transparent;
+    }
+    &::after {
+      border: 0 solid transparent;
+    }
+    &:hover {
+      color: #0eb7da;
+      &::before {
+        border-top-color: #0eb7da;
+        border-right-color: #0eb7da;
+        border-bottom-color: #0eb7da;
+        transition:
+          border-top-color 0.15s linear,
+          border-right-color 0.15s linear 0.10s,
+          border-bottom-color 0.15s linear 0.20s;
+      }
+      &::after {
+        border-top: 2px solid #0eb7da;
+        border-left-width: 2px;
+        border-right-width: 2px;
+        transform: rotate(270deg);
+        transition:
+          transform 0.4s linear 0s,
+          border-left-width 0s linear 0.35s;
+      }
     }
   }
 }

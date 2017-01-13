@@ -37,20 +37,6 @@
       </p>
     </div>
 
-    <!-- adsense -->
-    <div>
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- cssButtons -->
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-5873669074216750"
-           data-ad-slot="7507982221"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-
     <div class="howtouse">
       <p>ボタンをクリックするとそのボタンのHTMLとCSSが表示されます。</p>
       <p>ボタンのサイズや色などは各自で変更してください。</p>
@@ -1207,6 +1193,11 @@
           <a class="button_anchor" href="javascript:void(0);">source</a>
         </div>
       </li>
+      <li class="button_list">
+        <div class="button" id="btn21">
+          <a class="button_anchor" href="javascript:void(0);">source</a>
+        </div>
+      </li>
       <li class="source_box" id="btn19_source">
         <ul class="source_list clearfix">
           <li class="source_html source">
@@ -1297,6 +1288,293 @@
           </li>
         </ul>
       </li>
+      <li class="source_box" id="btn21_source">
+        <ul class="source_list clearfix">
+          <li class="source_html source">
+            <p class="description">HTML</p>
+            <pre>
+              <code class="html">
+  &lt;a class="button" href=""&gt;source&lt;/a&gt;
+              </code>
+            </pre>
+          </li>
+          <li class="source_css source">
+            <p class="description">CSS</p>
+            <pre>
+              <button class="btn_copy" data-clipboard-text>Copy</button>
+              <code class="css">
+  .button {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 2px #f45e61;
+    line-height: 40px;
+    color: #f45e61;
+    text-align: center;
+    text-transform: capitalize;
+    transition: color 0.25s;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border: 2px solid transparent;
+    }
+    &::before {
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      bottom: 0;
+      right: 0;
+    }
+    &:hover {
+      color: #60daaa;
+      &::before,
+      &::after {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+      }
+      &::before {
+        border-top-color: #60daaa;
+        border-right-color: #60daaa;
+        transition:
+          width 0.25s ease-out,
+          height 0.25s ease-out 0.25s;
+      }
+      &::after {
+        border-bottom-color: #60daaa;
+        border-left-color: #60daaa;
+        transition:
+          border-color 0s ease-out 0.5s,
+          width 0.25s ease-out 0.5s,
+          height 0.25s ease-out 0.75s;
+      }
+    }
+  }</code>
+            </pre>
+          </li>
+        </ul>
+      </li>
+      <li class="button_list">
+        <div class="button" id="btn22">
+          <a class="button_anchor" href="javascript:void(0);">source</a>
+        </div>
+      </li>
+      <li class="button_list content_center">
+        <div class="button" id="btn23">
+          <a class="button_anchor" href="javascript:void(0);">source</a>
+        </div>
+      </li>
+      <li class="button_list">
+        <div class="button" id="btn24">
+          <a class="button_anchor" href="javascript:void(0);">source</a>
+        </div>
+      </li>
+      <li class="source_box" id="btn22_source">
+        <ul class="source_list clearfix">
+          <li class="source_html source">
+            <p class="description">HTML</p>
+            <pre>
+              <code class="html">
+  &lt;a class="button" href=""&gt;source&lt;/a&gt;
+              </code>
+            </pre>
+          </li>
+          <li class="source_css source">
+            <p class="description">CSS</p>
+            <pre>
+              <button class="btn_copy" data-clipboard-text>Copy</button>
+              <code class="css">
+  .button {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 2px #f45e61;
+    line-height: 40px;
+    color: #f45e61;
+    text-align: center;
+    text-transform: capitalize;
+    transition: color 0.25s;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border: 2px solid transparent;
+      box-sizing: border-box;
+    }
+    &::before {
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      top: 0;
+      left: 0;
+    }
+    &:hover {
+      color: #fbca67;
+      &::before,
+      &::after {
+        width: 100%;
+        height: 100%;
+      }
+      &::before {
+        border-top-color: #fbca67;
+        border-right-color: #fbca67;
+        transition:
+          width 0.25s ease-out,
+          height 0.25s ease-out 0.25s;
+      }
+      &::after {
+        border-bottom-color: #fbca67;
+        border-left-color: #fbca67;
+        transition:
+          height 0.25s ease-out,
+          width 0.25s ease-out 0.25s;
+      }
+    }
+  }</code>
+            </pre>
+          </li>
+        </ul>
+      </li>
+      <li class="source_box" id="btn23_source">
+        <ul class="source_list clearfix">
+          <li class="source_html source">
+            <p class="description">HTML</p>
+            <pre>
+              <code class="html">
+  &lt;a class="button" href=""&gt;source&lt;/a&gt;
+              </code>
+            </pre>
+          </li>
+          <li class="source_css source">
+            <p class="description">CSS</p>
+            <pre>
+              <button class="btn_copy" data-clipboard-text>Copy</button>
+              <code class="css">
+  .button {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 2px #f45e61;
+    line-height: 40px;
+    color: #f45e61;
+    text-align: center;
+    text-transform: capitalize;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transform-origin: center;
+    }
+    &::before {
+      border-top: 2px solid #6477b9;
+      border-bottom: 2px solid #6477b9;
+      transform: scale3d(0,1,1);
+    }
+    &::after {
+      border-left: 2px solid #6477b9;
+      border-right: 2px solid #6477b9;
+      transform: scale3d(1,0,1);
+    }
+    &:hover {
+      color: #6477b9;
+      &::before,
+      &::after {
+        transform: scale3d(1,1,1);
+        transition: transform 0.5s;
+      }
+    }
+  }</code>
+            </pre>
+          </li>
+        </ul>
+      </li>
+      <li class="source_box" id="btn24_source">
+        <ul class="source_list clearfix">
+          <li class="source_html source">
+            <p class="description">HTML</p>
+            <pre>
+              <code class="html">
+  &lt;a class="button" href=""&gt;source&lt;/a&gt;
+              </code>
+            </pre>
+          </li>
+          <li class="source_css source">
+            <p class="description">CSS</p>
+            <pre>
+              <button class="btn_copy" data-clipboard-text>Copy</button>
+              <code class="css">
+  .button {
+    position: relative;
+    left: 50px;
+    top: -20px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    line-height: 100px;
+    color: #f45e61;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 100%;
+    padding: 0;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      box-sizing: border-box;
+      border-radius: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+    &::before {
+      border: 2px solid transparent;
+    }
+    &::after {
+      border: 0 solid transparent;
+    }
+    &:hover {
+      color: #0eb7da;
+      &::before {
+        border-top-color: #0eb7da;
+        border-right-color: #0eb7da;
+        border-bottom-color: #0eb7da;
+        transition:
+          border-top-color 0.15s linear,
+          border-right-color 0.15s linear 0.10s,
+          border-bottom-color 0.15s linear 0.20s;
+      }
+      &::after {
+        border-top: 2px solid #0eb7da;
+        border-left-width: 2px;
+        border-right-width: 2px;
+        transform: rotate(270deg);
+        transition:
+          transform 0.4s linear 0s,
+          border-left-width 0s linear 0.35s;
+      }
+    }
+  }</code>
+            </pre>
+          </li>
+        </ul>
+      </li>
     </ul>
     <div class="page_description">
       <p>今後もボタンを追加していきます。</p>
@@ -1333,16 +1611,6 @@
   </footer>
 
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
-    ga('create', 'UA-59849686-3', 'auto');
-    ga('send', 'pageview');
-  </script>
-
-  <script>
     // clip board
     $('.btn_copy').each(function(i, elem) {
       var target = $(elem).next('.css').html();
@@ -1356,7 +1624,7 @@
     clipboard.on('error', function(e) {
       //失敗時の処理
     });
-
   </script>
+
 </body>
 </html>
