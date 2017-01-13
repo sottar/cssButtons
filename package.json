@@ -1,0 +1,29 @@
+{
+  "name": "css_buttons",
+  "version": "1.0.0",
+  "description": "List of button designs with only CSS. No javascript! No images!",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-cli": "^1.2.0",
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-typescript": "^0.8.0",
+    "grunt-contrib-connect": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sottar/cssButtons.git"
+  },
+  "author": "Sota Ohara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sottar/cssButtons/issues"
+  },
+  "homepage": "https://github.com/sottar/cssButtons#readme"
+}
